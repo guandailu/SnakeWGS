@@ -1,0 +1,63 @@
+__default__:
+  partition: "high"
+  nodes: 1
+  cpus: "{threads}"
+  mem: 12G
+  name: "{rule}.{wildcards}"
+  output: "Logs/{rule}.{wildcards}.%j.out"
+  time: "10-0"
+
+build_idx:
+  partition: "high"
+  mem: 2G
+  cpus: 4
+
+data_download:
+  partition: "high"
+  mem: 12G
+  cpus: 12
+
+trim_reads:
+  partition: "high"
+  mem: 12G
+  cpus: 12
+
+trim_paired_reads:
+  partition: "high"
+  mem: 12G
+  cpus: 12
+
+bwa_mem:
+  partition: "high"
+  cpus: 12
+  mem: 24G
+
+bwa_mem_paired:
+  partition: "high"
+  cpus: 12
+  mem: 24G
+
+sort_bam:
+  partition: "high"
+  cpus: 12
+  mem: 24G
+
+extract_unalignment:
+  partition: "high"
+  cpus: 6
+  mem: 6G
+
+remove_deplicates:
+  partition: "high"
+  cpus: 12
+  mem: 24G
+
+run_basecalibration:
+  partition: "high"
+  cpus: 12
+  mem: 24G
+
+apply_bqsr:
+  partition: "high"
+  cpus: 12
+  mem: 24G
