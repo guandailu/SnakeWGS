@@ -1,0 +1,7 @@
+workdir: AfricanChickens
+sample_tab: Samples.txt
+genome: Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna_sm.toplevel.chr.fa
+gtf: Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.107.chr.gtf
+mapq: 30
+dbsnp: gallus_gallus.vcf.gz
+tmpdir: Temp
