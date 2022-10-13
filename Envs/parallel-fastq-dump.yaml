@@ -1,0 +1,5 @@
+channels:
+  - bioconda
+dependencies:
+  - parallel-fastq-dump=0.6.3
+  - sra-tools=2.10
